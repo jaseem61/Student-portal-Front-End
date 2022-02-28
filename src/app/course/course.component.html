@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="abc" *ngIf="courses.length==0">
+        <h3><b>You Have Enrolled All the Courses</b></h3>
+    </div>
+    <mat-card *ngFor="let course of courses">
+        <mat-card-title>{{course.name}}</mat-card-title>
+        <mat-card-subtitle style="float: left;">Course id: {{course.id}}</mat-card-subtitle>
+        <button mat-raised-button color="primary" style="float: right;" (click)="handleEnroll(course.id)">Enroll</button>
+    </mat-card>
+</div>

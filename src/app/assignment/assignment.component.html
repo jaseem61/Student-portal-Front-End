@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="abc" *ngIf="assignments.length==0">
+        <h3 style="text-align: center;"><b>HURRAY! No More Assignments Left!</b></h3>
+    </div>
+    <mat-card *ngFor="let assignment of assignments">
+        <mat-card-title>Assignment {{assignment.id}}</mat-card-title>
+        <mat-card-subtitle style="float: left;">{{assignment.name}}</mat-card-subtitle>
+        <div style="float:right;" class="sub">
+        <button mat-raised-button color="primary" (click)="handleAssignment(assignment.id)">View</button>
+    </div>
+    </mat-card>
+</div>

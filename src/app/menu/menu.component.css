@@ -1,0 +1,17 @@
+.left{
+    flex: auto 1 1;
+    display: flex;
+    justify-content: center;
+}
+.icon
+{
+    margin-right: 3px;
+}
+
+a:hover{
+    color: black;
+}
+
+.height-adjust{
+    height: 60px;
+}

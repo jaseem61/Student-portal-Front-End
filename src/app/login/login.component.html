@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="container-2">
+    <mat-card >
+        <mat-card-title style="text-align: center;">LOGIN</mat-card-title>
+        <mat-card-subtitle style="text-align: center;">Please Enter Your Credentials</mat-card-subtitle>
+        <mat-card-content style="display: flex;justify-content:center;">
+            <form (ngSubmit)="handleLogin()">
+            <table>
+                <tr>
+                <td>
+                    <Label for="username">Username: </Label>
+                        <!-- <label for="name">Username</label> -->
+                        <input name="username" [(ngModel)]="username">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <Label for="password">Password: </Label>
+                        <input type="password" name="password" [(ngModel)]="password">
+                </td>
+            </tr>
+            <button mat-raised-button color="primary" class="btn-adjust" type="submit">Login</button>
+    </table>
+</form>
+        </mat-card-content>
+    </mat-card>
+</div>
+</div>

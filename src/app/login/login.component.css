@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 593px;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.container-2{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-adjust{
+    margin-left: 100px;
+}
+
+input{
+    margin-left: 5px;
+}

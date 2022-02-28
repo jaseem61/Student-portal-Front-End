@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 593px;
+    overflow: scroll;
+}
+
+.bar{
+    flex-basis: 20%;
+}
+
+.abc
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 593px;
+    text-align: center;
+}

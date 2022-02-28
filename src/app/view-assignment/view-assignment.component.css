@@ -1,0 +1,15 @@
+.abc{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 593px;
+}
+
+.file-input{
+    display: none;
+}

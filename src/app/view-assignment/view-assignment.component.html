@@ -1,0 +1,17 @@
+<div class="container">
+    <mat-card>
+        <mat-card-title>Assignment Id: {{assignment.id}}</mat-card-title>
+        <mat-card-subtitle>{{assignment.name}}</mat-card-subtitle>
+        <mat-card-content>{{assignment.description}}</mat-card-content>
+    <mat-card-actions class="abc">
+        <input type="file" class="file-input" (change)="onFileSelected($event)" #fileUpload>
+        <div class="file-upload">
+            {{fileName||'no file uploaded yet!'}}
+            <button mat-fab color="primary" (click)="fileUpload.click()"><mat-icon>attach_file</mat-icon></button>
+        </div>
+    </mat-card-actions>
+        <mat-card-actions class="abc">
+            <button mat-raised-button color="primary" [disabled]="!btnStatus" (click)="handleSubmission()">Submit</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

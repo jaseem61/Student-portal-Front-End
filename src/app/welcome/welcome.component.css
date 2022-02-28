@@ -1,0 +1,31 @@
+.container{
+    height: 593px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    margin-top: 25px;
+}
+
+.select{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.sub-container{
+    margin-top: 100px;
+}
+
+.left{
+    float: left;
+    width: 500px;
+    border-radius: 10%;
+}
+
+.right{
+    float: right;
+    width: 500px;
+    border-radius: 10%;
+}
+

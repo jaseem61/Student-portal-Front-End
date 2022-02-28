@@ -1,0 +1,40 @@
+<mat-toolbar color="primary" class="height-adjust">
+    <mat-toolbar-row>
+    <mat-icon class="icon">account_balance</mat-icon>
+    <a mat-button (click)="handleHome()">Assignment Management</a>
+    <div class="left">
+        <a mat-button *ngIf="authService.isUserLoggedIn()" (click)="handleCourse()">Courses</a>
+        <a mat-button *ngIf="authService.isUserLoggedIn()" (click)="handleAssignment()">Assignments</a>
+    </div>
+    <div class="right">
+        <a mat-raised-button *ngIf="authService.isUserLoggedIn()" (click)="handleLogout()">Logout</a>
+        <!-- <a mat-raised-button>Login</a> -->
+    </div>
+</mat-toolbar-row>
+</mat-toolbar>
+
+<!-- <div class="container">
+    <button mat-stroked-button [matMenuTriggerFor]="app" >Trigger</button>
+    <mat-menu #app="matMenu" xPosition="after" yPosition="below">
+        <button mat-menu-item [matMenuTriggerFor]="subMenu" >Courses</button>
+        <button mat-menu-item >Assignments</button>
+    </mat-menu>
+    
+    <mat-menu #subMenu="matMenu">
+        <button mat-menu-item >Courses</button>
+        <button mat-menu-item >Assignments</button>
+        <button mat-menu-item >Assignments</button>
+    </mat-menu>
+    lazyloading
+    <mat-menu #app1="matMenu" xPosition="after" yPosition="below" >
+        <ng-template matMenuContent let-name="username">
+        <button mat-menu-item >Physics {{name}}</button>
+        <button mat-menu-item >Chemistry</button>
+        </ng-template>
+    </mat-menu>
+    
+    <button mat-flat-button [matMenuTriggerData]="{username:'jaseem'}" [matMenuTriggerFor]="app1">Menu2</button>
+
+
+
+</div> -->
